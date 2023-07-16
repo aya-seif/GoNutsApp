@@ -10,15 +10,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.gonutsapp.ui.home.HomeScreen
 import com.example.gonutsapp.ui.onboarding.OnBoardingScreen
 import com.example.gonutsapp.ui.theme.GoNutsAppTheme
+import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             GoNutsAppTheme {
-                OnBoardingScreen()
+                HomeScreen()
             }
         }
     }

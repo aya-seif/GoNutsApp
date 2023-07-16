@@ -36,7 +36,9 @@ fun OnBoardingContent() {
     val scrollState = rememberScrollState()
 
     Column(
-        modifier = Modifier.background(Secondary).fillMaxSize()
+        modifier = Modifier
+            .background(Secondary)
+            .fillMaxSize()
             .paint(
                 painter = painterResource(R.drawable.bg_onboarding),
                 contentScale = ContentScale.Fit,
@@ -52,11 +54,13 @@ fun OnBoardingContent() {
 
         Button(
             onClick = { },
-            modifier = Modifier.fillMaxWidth().padding(top = 30.dp, bottom = 46.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 30.dp, bottom = 46.dp),
             colors = ButtonDefaults.buttonColors(containerColor = White)
         ) {
             Text(
-                text = stringResource(id = R.string.get_started),
+                text = stringResource(R.string.get_started),
                 style = TitleLargeSemiBold,
                 modifier = Modifier.padding(vertical = 8.dp)
             )

@@ -1,5 +1,6 @@
 package com.example.gonutsapp.ui.theme
 
+import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
@@ -84,3 +85,17 @@ val TitleXLarge = TextStyle(
     color = Black,
 )
 
+val BodyMediumSemiBoldSpanStyle = SpanStyle(
+    fontSize = 14.sp,
+    fontFamily = Inter,
+    fontWeight = FontWeight.SemiBold,
+    color = Grey,
+    textDecoration = TextDecoration.LineThrough,
+)
+
+val TitleXLargeSemiBoldSpanStyle = SpanStyle(
+    fontSize = 22.sp,
+    fontFamily = Inter,
+    fontWeight = FontWeight.SemiBold,
+    color = Black,
+)

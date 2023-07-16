@@ -2,5 +2,10 @@
     <string name="app_name">GoNutsApp</string>
     <string name="Gonuts_with_Donuts">Gonuts\nwith\nDonuts</string>
     <string name="Gonuts_Details">Gonuts with Donuts is a Sri Lanka dedicated food outlets for specialize manufacturing of Donuts in Colombo, Sri Lanka.</string>
+    <string name="lets_gonuts">Let’s Gonuts!</string>
+    <string name="order_donuts">Order your favourite donuts now</string>
+    <string name="search_icon">Search Icon</string>
     <string name="get_started">Get Started</string>
+    <string name="today_offers">Today Offers</string>
+    <string name="donuts">Donuts</string>
 </resources>
