@@ -1,6 +1,8 @@
 package com.example.gonutsapp.ui.home
 
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.savedstate.SavedStateRegistry
 import com.example.gonutsapp.data.GoNutsDataSource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -10,11 +12,13 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val goNutsDataSource: GoNutsDataSource
+    private val goNutsDataSource: GoNutsDataSource,
+    savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState = _uiState.asStateFlow()
+    private val registry: SavedStateRegistry ? = null
 
     init {
         getDonutsOffer()

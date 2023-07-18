@@ -7,7 +7,7 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.sp
 
 val HeadlineLargeSemiBold = TextStyle(
-    fontSize = 54.sp,
+    fontSize = 48.sp,
     fontFamily = Inter,
     fontWeight = FontWeight.SemiBold,
     color = Primary,
