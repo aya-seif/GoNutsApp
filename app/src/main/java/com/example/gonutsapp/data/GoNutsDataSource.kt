@@ -14,14 +14,14 @@ class GoNutsDataSource @Inject constructor() {
                 isFavorite = false, image = R.drawable.donut_1,
                 name = "Strawberry Wheel",
                 description = "These Baked Strawberry Donuts are filled with fresh,these Baked Strawberry Donuts are filled with fresh strawberries",
-                originalPrice = 16,
+                originalPrice = 18,
                 discountedPrice = 20
             ),
             DonutOffer(
                 isFavorite = false, image = R.drawable.donut_2,
                 name = "Chocolate Glaze",
                 description = "Moist and fluffy baked chocolate donuts full of chocolate flavor.",
-                originalPrice = 16,
+                originalPrice = 18,
                 discountedPrice = 20
             ),
             DonutOffer(
@@ -35,7 +35,7 @@ class GoNutsDataSource @Inject constructor() {
                 isFavorite = false, image = R.drawable.donut_2,
                 name = "Chocolate Glaze",
                 description = "Moist and fluffy baked chocolate donuts full of chocolate flavor.",
-                originalPrice = 16,
+                originalPrice = 18,
                 discountedPrice = 20
             ),
             DonutOffer(
@@ -49,7 +49,7 @@ class GoNutsDataSource @Inject constructor() {
                 isFavorite = false, image = R.drawable.donut_2,
                 name = "Chocolate Glaze",
                 description = "Moist and fluffy baked chocolate donuts full of chocolate flavor.",
-                originalPrice = 16,
+                originalPrice = 18,
                 discountedPrice = 20
             ),
             DonutOffer(
@@ -63,7 +63,7 @@ class GoNutsDataSource @Inject constructor() {
                 isFavorite = false, image = R.drawable.donut_2,
                 name = "Chocolate Glaze",
                 description = "Moist and fluffy baked chocolate donuts full of chocolate flavor.",
-                originalPrice = 16,
+                originalPrice = 18,
                 discountedPrice = 20
             ),
         )

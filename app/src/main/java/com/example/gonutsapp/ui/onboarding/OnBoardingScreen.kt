@@ -19,6 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.gonutsapp.R
 import com.example.gonutsapp.percentOfScreenHeight
 import com.example.gonutsapp.ui.theme.HeadlineLargeSemiBold
@@ -29,12 +30,14 @@ import com.example.gonutsapp.ui.theme.TitleMedium
 import com.example.gonutsapp.ui.theme.White
 
 @Composable
-fun OnBoardingScreen() {
-    OnBoardingContent()
+fun OnBoardingScreen(navHostController: NavHostController) {
+    OnBoardingContent{
+        navHostController.navigateToHomeScreen()
+    }
 }
 
 @Composable
-fun OnBoardingContent() {
+fun OnBoardingContent(onGetStartedBtnClicked : () -> Unit) {
 
     val scrollState = rememberScrollState()
 
@@ -66,7 +69,7 @@ fun OnBoardingContent() {
         )
 
         Button(
-            onClick = { },
+            onClick = { onGetStartedBtnClicked() },
             colors = ButtonDefaults.buttonColors(containerColor = White),
             modifier = Modifier
                 .fillMaxWidth()

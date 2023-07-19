@@ -16,14 +16,14 @@ import com.example.gonutsapp.ui.profile.profileRoute
 fun GoNutsNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = BottomBarScreen.Home.route
+        startDestination = BottomBarScreen.OnBoarding.route
     ) {
-        homeRoute()
+        homeRoute(navController)
         favoriteRoute()
         notificationRoute()
         cartRoute()
         profileRoute()
-        onBoardingRoute()
-        detailsRoute()
+        onBoardingRoute(navController)
+        detailsRoute(navController)
     }
 }
